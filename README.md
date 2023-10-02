@@ -8,7 +8,22 @@
 
 ### directory
 
-
+```zsh
+% gtree                                      
+.
+├── .gitignore
+├── Leetcode
+│   └── ...
+├── LICENSE
+├── poetry.lock
+├── pyproject.toml
+├── README.md
+└── tests
+    ├── __init__.py
+    └── Leetcode
+        ├── __init__.py
+        └── ...
+```
 
 
 
