@@ -24,7 +24,7 @@ class Solution:
             return self.array
         
         for outer_idx in range(0, numRows-1):
-            res = list(map(lambda a,b: a+b, [0] + self.array[outer_idx], self.array[outer_idx] + [0]))
+            res = list(map(lambda a,b: a+b, [0] + self.array[-1], self.array[-1] + [0]))
             self.array.append(res)
         
         return self.array

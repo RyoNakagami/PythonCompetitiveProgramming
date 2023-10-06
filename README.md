@@ -12,6 +12,8 @@
 % gtree                                      
 .
 ├── .gitignore
+├── algorithm
+│   └── ...
 ├── Leetcode
 │   └── ...
 ├── LICENSE
@@ -24,6 +26,13 @@
         ├── __init__.py
         └── ...
 ```
+
+|directory|説明|
+|---|---|
+|`algorithm`|self study|
+|`Leetcode`|Leetcode solution dir|
+
+
 
 
 
