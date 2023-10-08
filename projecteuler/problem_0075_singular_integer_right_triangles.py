@@ -28,7 +28,6 @@ class Solution:
 
     def singular_pythagorean_count(self, sum_limit) :
         res = [0] * (sum_limit + 1)
-        p = []
         for m in range(1, int((sum_limit//2)**0.5)+1):
             for n in range(-m+1, 0, 2) :
                 n = abs(n)
