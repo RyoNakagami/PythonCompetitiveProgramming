@@ -1,3 +1,8 @@
+## Env info
+
+- Python version: Python 3.11.4
+
+
 ## Repository Structure
 ### Branch
 
