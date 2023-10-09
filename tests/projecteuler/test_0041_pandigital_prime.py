@@ -15,6 +15,6 @@ from projecteuler.problem_0041_pandigital_prime import Solution
      ]
 )
 
-def test_with_example_0136(input, expected):
+def test_with_example_0041(input, expected):
     Solver = Solution()
     assert Solver.search(input['nums']) == expected

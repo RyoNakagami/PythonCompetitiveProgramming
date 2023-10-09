@@ -9,6 +9,6 @@ from Leetcode.problem_0268_missing_number import Solution
     ]
 )
 
-def test_with_example_0118(input, expected):
+def test_with_example_0268(input, expected):
     Solver = Solution()
     assert Solver.missingNumber(input['nums']) == expected
