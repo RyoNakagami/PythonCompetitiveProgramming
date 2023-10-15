@@ -25,7 +25,7 @@ class Solution:
             (x^2-ny^2)(z^2-nt^2) = (xz + nty)^2-n(xt + yz)^2
             where n = 2, z = 3, t = 2
         """
-        x, y = 1, 1
+        x, y = 7, 5
         while True:
             x, y = 3 * x + 4 * y, 2 * x + 3 * y
             if (x % 2 == 1) and (y % 2 == 1):
