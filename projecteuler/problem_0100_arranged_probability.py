@@ -14,11 +14,10 @@ class Solution:
 
 
     Solution
-        Target = 10 ** 12
-        generator = Solution.solution_generator()
-        print(next(x[1] for x in filter(lambda x: x[0] > Target, generator)))
+        Solver = Solution()
+        Solver.compute_blue_disk(10**12)
     """
-    def solution_generator():
+    def solution_generator(self):
         """
         Using Pell's equation such that
 
@@ -31,3 +30,7 @@ class Solution:
             if (x % 2 == 1) and (y % 2 == 1):
                 total, blue = (x + 1) // 2, (y + 1) // 2
                 yield total, blue
+
+    def compute_blue_disk(self, Target):
+        generator = self.solution_generator()
+        return next(x[1] for x in filter(lambda x: x[0] > Target, generator))
