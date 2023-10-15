@@ -24,4 +24,4 @@ class Solution:
             b[max_idx-2] += a[max_idx-1]
             res = b
 
-        return res[0] % (10**9 + 7)
+        return res[0] % 1000_000_007
