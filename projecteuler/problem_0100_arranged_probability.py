@@ -11,6 +11,12 @@ class Solution:
 
     By finding the first arrangement to contain over 10^12
     discs in total, determine the number of blue discs that the box would contain.
+
+
+    Solution
+        Target = 10 ** 12
+        generator = Solution.solution_generator()
+        print(next(x[1] for x in filter(lambda x: x[0] > Target, generator)))
     """
     def solution_generator():
         """
@@ -25,7 +31,3 @@ class Solution:
             if (x % 2 == 1) and (y % 2 == 1):
                 total, blue = (x + 1) // 2, (y + 1) // 2
                 yield total, blue
-
-Target = 10 ** 12
-generator = Solution.solution_generator()
-print(next(x[1] for x in filter(lambda x: x[0] > Target, generator)))
