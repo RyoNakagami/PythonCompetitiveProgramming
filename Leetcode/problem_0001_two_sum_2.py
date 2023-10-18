@@ -1,3 +1,4 @@
+#%%
 from typing import List
 
 class Solution:
@@ -10,14 +11,12 @@ class Solution:
 
         You may assume that each input would have exactly one solution, 
         and you may not use the same element twice.
-    
-    Time Complexity: O(N)
+
+    Note:
+        the time complexity is O(N^2) 
     """
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        thresh = target - min(nums)
-        d = {j:i for i, j in enumerate(nums) if j <= thresh}
-        for i, num in enumerate(nums):
-            diff = target - num
-            if diff in d and d[diff] != i:
-                return [i, d[diff]]
-      
+        for left_idx in range(0, len(nums)):
+            for right_idx in range(left_idx+1, len(nums)):
+                if nums[left_idx] + nums[right_idx] == target:
+                    return [left_idx, right_idx]
